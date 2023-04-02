@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> GreenIfyThatGray </title>
+</head>
+
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="./Eco Green City(720P_HD).mp4" type="video/mp4">
+      </video>
+
+    <div class="topnav">
+      <a class="btn btn1" href="./HomePage.html">Home</a>
+      <a class="btn btn1" href="./Gallary.html">Gallary</a>
+      <a class="btn btn1" href="./ContactPage.html">Contact</a>
+      <a class="btn btn1" href="./News.html">News</a>
+      <img id="logo" src="./e9bef1127718285.Y3JvcCwzMTcxLDI0ODEsMTY0LDA.jpg">
+      <a class="btn btn1" href="./Locations.html">Location</a>
+      <a class="btn btn1" href="./About.html">About</a>
+      <a class="btn btn1" href="./Contribute.html">Contribute</a>
+      <a class="btn btn1" href="./ServiceProducts.html">Products and Services</a>
+    </div>
+
+    <h1 id="TableTitle">Contact us</h1>
+
+    <table id="customers">
+      <tr>
+        <th>Icon</th>
+        <th>People</th>
+        <th>Contact</th>
+        <th>Email</th>
+        <th>Location</th>
+      </tr>
+      <tr>
+        <td><img class="UserIcon" src="./Gallary/people/Keevan.jpeg"></td>
+        <td>Keevan Ruuse</td>
+        <td>2352134252342</td>
+        <td>Keeva@gmail.comn</td>
+        <td>Geneva Switzerland</td>
+      </tr>
+      <tr>
+        <td><img class="UserIcon" src="./Gallary/people/juha-sipila-finland-prime-minister-1024x576.jpg"></td>
+        <td>Santeri Heikkinen</td>
+        <td>2352134252342</td>
+        <td>Santeri@gmail.comn</td>
+        <td>Helsinki Finland</td>
+      </tr>
+      <tr>
+        <td><img class="UserIcon" src="./Gallary/people/fredverdffre.jpeg"></td>
+        <td>Farah Awang</td>
+        <td>2352134252342</td>
+        <td>Awang@gmail.comn</td>
+        <td>Green City Malaysia</td>
+      </tr>
+      <td><img class="UserIcon" src="./Gallary/people/istockphoto-960644992-612x612.jpg"></td>
+      <td>Yan Zhou</td>
+      <td>2352134252342</td>
+      <td>Zhou@gmail.comn</td>
+      <td>Singapore</td>
+    </tr>
+    </table>
+
+
+    <div class="footer">
+        <table>
+            <tr>
+            <th>GreenIfyThatGray</th>
+            </tr>
+            <tr>
+                <th>Copyright 2023</th>
+            </tr>
+            <tr>
+                <th>GreenIfyThatGray.co.za</th>
+            </tr>
+
+        </table>
+
+        <a href="https://twitter.com/Kurokeida"><img id="TwitterIcon" href="" src="./Twitter-logo.svg.png"></a>
+    </div>
+</body>
+
+<style>
+    #myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  z-index: -2;
+}
+
+    #logo {
+        position: relative;
+        width: 90px;
+        height: 83px;
+        left:550px;
+        top: -20px;
+        animation-duration: 0.5s;
+        animation-name: animate-fade;
+        animation-delay: 0.1s;
+        animation-fill-mode: backwards;
+     }
+
+
+#MainCover {
+    position: relative;
+    background-color:   #CBD18F;
+    width: 1100px;
+    height: 665px;
+    left:300px;
+    opacity: 0.9;
+    animation-duration: 0.5s;
+    animation-name: animate-fade;
+    animation-delay: 0.4s;
+    animation-fill-mode: backwards;
+}    
+
+#ContactPageCover {
+    position: relative;
+    background-color:   #CBD18F;
+    width: 1100px;
+    height: 665px;
+    left: 290px;
+}
+#ContactPageCover label {
+    position: relative;
+    font: 30px;
+}
+.TextLabel {
+    position: relative;
+    font-size: 20px;
+    color: #3A6B35;
+}
+#HeaderTxt {
+    position: relative;
+    left: 250px;
+    color: #3A6B35;
+}
+
+.SendButton {
+    position: relative;
+    border: 2px ;
+}
+
+
+
+
+.btn {
+    position: relative;
+    top: -55px;
+    left: 550px;
+    background: none;
+    border: 2px solid #317773;
+    padding: 12px 10px;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+    transition: color 0.4s linear;
+    animation-duration: 0.5s;
+    animation-name: animate-fade;
+        animation-delay: 0.3s;
+        animation-fill-mode: backwards;
+}
+.btn:hover {
+    color: #07d600;
+}
+.btn::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: #CCF381;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+}
+.btn1::before {
+    transform: scaleX(0);
+}
+.btn1:hover::before {
+    transform: scaleX(1);
+}
+
+
+.footer {
+    position: fixed;
+    background-color: #CBD18F;
+    color: #3A6B35;
+    width: 2000px;
+    top: 899px;
+}
+table {
+    position: relative;
+    left: 760px;
+}
+
+#TwitterIcon {
+    position: relative;
+    width: 52px;
+    height: 50px;
+    top: -65px;
+    left: 1020px;
+}
+
+
+#ContactInputs
+input[type=text] {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+input[type=text]:focus {
+  box-shadow: 0 0 20px #26bf47;
+}
+input[type=text], select, textarea {
+  width: 80%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+@keyframes animate-fade {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+    }   
+
+    #customers {
+        position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 70%;
+  left: 200px;
+  background-color: #CBD18F;
+  opacity: 0.7;
+
+}
+
+#customers td, #customers th {
+  border: 1px solid #CBD18F;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #CBD18F;}
+
+#customers tr:hover {background-color: #CBD18F;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #317773;
+  color: white;
+}
+#TableTitle {
+  position: relative;
+  left: 750px;
+  color: #3A6B35;
+}
+.UserIcon {
+    position: relative;
+    border-radius: 30px;
+    width: 70px;
+    left: 50px;
+    opacity: 1;
+}
+</style>
+
+</html>
